@@ -62,8 +62,8 @@ sync_to_github:
   image: alpine:3.20
   script:
     - apk add --no-cache git openssh-client
-    - git config user.email "ci@example.com"
-    - git config user.name "gitlab-ci"
+    - git config user.email "your-email"
+    - git config user.name "gitlab-user"
     - git remote add github "https://${GITHUB_TOKEN}@github.com/${GITHUB_OWNER}/${GITHUB_REPO}.git"
     - git push github HEAD:main
   only:
