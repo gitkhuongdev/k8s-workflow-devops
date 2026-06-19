@@ -1,6 +1,4 @@
-# Spring Boot Ecommerce on Kubernetes
-
-This repository is built as a production-ready DevOps / Platform / Cloud portfolio project.
+# This repository is built as a production-ready DevOps portfolio project.
 
 ## Architecture
 
