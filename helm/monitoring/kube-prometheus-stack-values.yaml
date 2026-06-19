@@ -1,0 +1,17 @@
+prometheus:
+  prometheusSpec:
+    storageSpec:
+      volumeClaimTemplate:
+        spec:
+          accessModes:
+            - ReadWriteOnce
+          resources:
+            requests:
+              storage: 10Gi
+          storageClassName: nfs-storage
+
+grafana:
+  persistence:
+    enabled: true
+    type: pvc
+    existingClaim: grafana-pvc

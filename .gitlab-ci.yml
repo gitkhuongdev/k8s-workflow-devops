@@ -1,0 +1,2 @@
+include:
+  - local: "CI/CD/gitlab-ci.yaml"

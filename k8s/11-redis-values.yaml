@@ -1,0 +1,22 @@
+architecture: replication
+
+auth:
+  enabled: true
+  password: <CHANGE_PASSWORD>
+
+master:
+  persistence:
+    enabled: true
+    existingClaim: redis-pvc
+    size: 5Gi
+
+replica:
+  replicaCount: 3
+  persistence:
+    enabled: true
+    existingClaim: redis-pvc
+    size: 5Gi
+
+sentinel:
+  enabled: true
+  replicas: 3
